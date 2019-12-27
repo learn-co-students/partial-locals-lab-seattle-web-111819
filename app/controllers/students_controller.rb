@@ -21,7 +21,6 @@ class StudentsController < ApplicationController
   end
 
   def index
-    params[:query] ||= ""
     @students = Student.search(params[:query])
   end
 
